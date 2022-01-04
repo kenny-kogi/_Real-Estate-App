@@ -4,9 +4,9 @@ import Image from "next/image";
 import { Flex, Box, Text, Icon } from "@chakra-ui/react";
 import { BsFilter } from "react-icons/bs";
 import SearchFilters from "./components/SearchFilters";
-import Property from "./components/Property";
 import noresult from "../assets/images/noresult.png";
 import { baseUrl, fetchApi } from "./utils/FetchApi";
+import Property from "./components/Property";
 
 const Search = ({ properties }) => {
   const [searchFlters, setSearchFilters] = useState(false);
@@ -34,9 +34,9 @@ const Search = ({ properties }) => {
         Properties {router.query.purpose}
       </Text>
       <Flex flexWrap="wrap">
-        {properties.map((property) => {
-          <Property property={property} />;
-        })}
+        {properties.map((property) => (
+          <Property property={property} key={property.id} />
+        ))}
       </Flex>
       {properties.length === 0 && (
         <Flex
@@ -52,8 +52,6 @@ const Search = ({ properties }) => {
     </Box>
   );
 };
-
-export default Search;
 
 export async function getServerSideProps({ query }) {
   const purpose = query.purpose || "for-rent";
@@ -77,3 +75,5 @@ export async function getServerSideProps({ query }) {
     },
   };
 }
+
+export default Search;

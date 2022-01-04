@@ -71,7 +71,6 @@ const Property = ({
             {rooms} <FaBed /> {baths} <FaBed /> | {millify(area)} sqft{" "}
             <BsGridFill />
           </Flex>
-
           <Text fontSize="lg">
             {title.length > 30 ? `${title.substring(0, 30)} ...` : title}
           </Text>
