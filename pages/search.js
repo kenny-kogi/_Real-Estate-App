@@ -3,10 +3,10 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import { Flex, Box, Text, Icon } from "@chakra-ui/react";
 import { BsFilter } from "react-icons/bs";
-import SearchFilters from "./components/SearchFilters";
+import SearchFilters from "../components/SearchFilters";
 import noresult from "../assets/images/noresult.png";
 import { baseUrl, fetchApi } from "../utils/FetchApi";
-import Property from "./components/Property";
+import Property from "../components/Property";
 
 const Search = ({ properties }) => {
   const [searchFlters, setSearchFilters] = useState(false);
