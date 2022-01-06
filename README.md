@@ -1,6 +1,6 @@
 ## Realtor
 
-Nextjs Application displaying and filtering property available for sale/Rent by consuming the RapidAPI
+Real Estate Application displaying and filtering property available for sale or Renting by consuming the RapidAPI.
 
 Open [https://real-estate-app-dfn9sf20r-kenny-kogi.vercel.app/](https://real-estate-app-dfn9sf20r-kenny-kogi.vercel.app/) with your browser to view the live version.
 
