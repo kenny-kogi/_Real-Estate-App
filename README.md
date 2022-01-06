@@ -10,7 +10,7 @@ Open [https://real-estate-app-dfn9sf20r-kenny-kogi.vercel.app/](https://real-est
 <li>Nextjs</li>
 <li>Reactjs</li>
 <li>RapidApi</li>
-<li>vercel</li>
+
 </ul>
 
 ## Installation
@@ -34,3 +34,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 <img src="assets/images/sc2.png" width="600" height="400"/>
 <img src="assets/images/sc3.png" width="600" height="400"/>
 </Flex>
+
+## Deploy
+
+<ul>
+<li>vercel</li>
+</ul>
